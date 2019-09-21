@@ -1,0 +1,19 @@
+{
+  "name": "fullstackopen2019_osa3",
+  "version": "1.0.0",
+  "description": "Exercises for part 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joona Kemppainen",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
