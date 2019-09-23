@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const cors = require('cors');
 
+app.use(cors());
 app.use(bodyParser.json());
 morgan.token('data', (req, res) => {
   return JSON.stringify(req.body);
@@ -76,7 +78,7 @@ app.post('/api/persons/', (req, res) => {
 
   persons = persons.concat(newPerson);
 
-  res.json(newPerson);
+  res.status(201).json(newPerson);
 });
 
 app.get('/info', (req, res) => {
