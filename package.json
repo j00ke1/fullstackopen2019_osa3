@@ -10,11 +10,13 @@
     "build:ui": "rm -rf build && cd ../fullstackopen2019/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../fullstackopen2019_osa3",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m \"uibuild\" && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "Joona Kemppainen",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^6.4.0",
     "nodemon": "^1.19.2"
   },
   "dependencies": {
