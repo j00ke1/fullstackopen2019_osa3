@@ -3,7 +3,9 @@ const uniqueValidator = require('mongoose-unique-validator');
 
 mongoose.set('useFindAndModify', false);
 
-const url = process.env.MONGODB_URI;
+// const url = process.env.MONGODB_URI;
+const url =
+  'mongodb+srv://admin:1234@cluster0-uscpq.mongodb.net/test?retryWrites=true&w=majority';
 
 console.log('Connecting to MongoDB');
 
